@@ -64,7 +64,7 @@ contract ERC20 {
 
 
     modifier isAddressWhitelisted(address _address) {
-        require(allwhitelistedAddresses[_address], "Addres has been added to whitelist");
+        require(allwhitelistedAddresses[_address], "Addres is not in the whitelist");
         _;
     }
     
